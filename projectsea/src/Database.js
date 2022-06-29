@@ -1,7 +1,8 @@
 const mysql = require("mysql");
 
 const connection = mysql.createPool({
-  host: "http://ec2-18-202-26-166.eu-west-1.compute.amazonaws.com/phpmyadmin/:3306",
+  host: "http://ec2-18-202-26-166.eu-west-1.compute.amazonaws.com/phpmyadmin/",
+  port:"3306",
   user: "leaderboard",
   password: "leaderboard",
   database: "leads"
