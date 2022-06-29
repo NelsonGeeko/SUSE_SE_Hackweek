@@ -5,7 +5,7 @@ var con = mysql.createConnection({
   port:"3306",
   path:"/phpmyadmin",
   user: "leaderboard",
-  password: "leaderboard"
+  password: "leaderboard",
   database:"leads"
 });
 
