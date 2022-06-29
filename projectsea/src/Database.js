@@ -2,7 +2,7 @@ var mysql = require("mysql");
 
 var con = mysql.createConnection({
   host: "http://ec2-18-202-26-166.eu-west-1.compute.amazonaws.com/phpmyadmin",
-//   port:"3306",
+  port:"3306",
 //   path:"/phpmyadmin",
   user: "leaderboard",
   password: "leaderboard",
