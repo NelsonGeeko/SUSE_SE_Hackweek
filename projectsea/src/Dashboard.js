@@ -178,7 +178,7 @@ function DashboardContent() {
                     height: 240,
                   }}
                 >
-                  <pageStopwatch />
+                  {/* <pageStopwatch /> */}
                 </Paper>
               </Grid>
               {/* Recent Orders */}
