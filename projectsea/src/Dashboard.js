@@ -171,7 +171,7 @@ function DashboardContent() {
                     height: 240,
                   }}
                 >
-                  {/* <Stopwatchpage/> */}
+                  <Stopwatchpage/>
                 </Paper>
               </Grid>
               {/* Recent Deposits */}
