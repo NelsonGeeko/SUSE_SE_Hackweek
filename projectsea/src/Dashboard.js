@@ -21,6 +21,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 // import Chart from './Chart';
 // import Deposits from './Deposits';
 // import Orders from './Orders';
+import pageStopwatch from './pageStopwatch';
 
 function Copyright(props) {
   return (
@@ -162,7 +163,7 @@ function DashboardContent() {
           <Toolbar />
           <Container maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
             <Grid container spacing={3}>
-              {/* Chart */}
+              {/* Stopwatch */}
               <Grid item xs={12} md={8} lg={9}>
                 <Paper
                   sx={{
@@ -172,7 +173,7 @@ function DashboardContent() {
                     height: 240,
                   }}
                 >
-                  {/* <Chart /> */}
+                  {<pageStopwatch />}
                 </Paper>
               </Grid>
               {/* Recent Deposits */}
