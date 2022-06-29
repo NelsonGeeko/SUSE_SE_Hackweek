@@ -20,8 +20,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 // import { mainListItems, secondaryListItems } from './listItems';
 // import Chart from './Chart';
 // import Deposits from './Deposits';
-import Stopwatchpage from './Stopwatchpage';
-
+// import Orders from './Orders';
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
@@ -164,8 +163,15 @@ function DashboardContent() {
             <Grid container spacing={3}>
               {/* Stopwatch */}
               <Grid item xs={12} md={8} lg={9}>
-                <Paper sx={{p: 2,display: 'flex',flexDirection: 'column',height: 240,}}>
-                  <Stopwatchpage />
+                <Paper
+                  sx={{
+                    p: 2,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    height: 240,
+                  }}
+                >
+                  {/* <Stopwatchpage/> */}
                 </Paper>
               </Grid>
               {/* Recent Deposits */}
@@ -178,7 +184,7 @@ function DashboardContent() {
                     height: 240,
                   }}
                 >
-                  {/* <pageStopwatch /> */}
+                  {/* <Deposits /> */}
                 </Paper>
               </Grid>
               {/* Recent Orders */}
