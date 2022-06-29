@@ -2,7 +2,7 @@ import React from "react";
 import ScopedCssBaseline from "@material-ui/core/ScopedCssBaseline";
 import Stopwatch from "./components/Stopwatch";
 
-function pageStopwatch() {
+function Stopwatchpage() {
   return (
     <ScopedCssBaseline>
       <Stopwatch />
@@ -10,4 +10,4 @@ function pageStopwatch() {
   );
 }
 
-export default pageStopwatch;
+export default Stopwatchpage;
