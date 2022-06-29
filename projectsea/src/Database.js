@@ -1,17 +1,22 @@
 const mysql = require("mysql");
 
-const connection = mysql.createPool({
+const connection = mysql.createConnection({
   host: "http://ec2-18-202-26-166.eu-west-1.compute.amazonaws.com",
   port:"3306",
   path:"/phpmyadmin",
   user: "leaderboard",
   password: "leaderboard",
-  database: "leads"
+//   database: "leads"
 });
 
-connection.query(
-  "SELECT  FROM leads",
-  (err, result) => {
-    err ? console.log(err) : console.log(result[0].hexcode);
-  }
-);
+con.connect(function(err) {
+    if (err) throw err;
+    console.log("Connected!");
+  });
+
+// connection.query(
+//   "SELECT  FROM leads",
+//   (err, result) => {
+//     err ? console.log(err) : console.log(result[0].hexcode);
+//   }
+// );
