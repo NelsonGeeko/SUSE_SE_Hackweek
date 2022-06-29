@@ -4,12 +4,11 @@ import './index.css';
 import Dashboard from './Dashboard';
 import App from './Input';
 import reportWebVitals from './reportWebVitals';
-import Stopwatchpage from './Stopwatchpage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Stopwatchpage/>
+    <Dashboard/>
   </React.StrictMode>
 );
 
