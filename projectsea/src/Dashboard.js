@@ -21,7 +21,6 @@ import { mainListItems, secondaryListItems } from './ListItems';
 // import Chart from './Chart';
 // import Deposits from './Deposits';
 // import Orders from './Orders';
-import Stopwatchpage from './Stopwatchpage';
 
 function Copyright(props) {
   return (
@@ -173,7 +172,7 @@ function DashboardContent() {
                     height: 240,
                   }}
                 >
-                  <Stopwatchpage/>
+                  {/* <Stopwatchpage/> */}
                 </Paper>
               </Grid>
               {/* Recent Deposits */}
