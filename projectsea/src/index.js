@@ -4,10 +4,12 @@ import './index.css';
 import Dashboard from './Dashboard';
 import App from './Input';
 import reportWebVitals from './reportWebVitals';
+import CssBaseline from "@material-ui/core/CssBaseline";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <CssBaseline />
     <Dashboard/>
   </React.StrictMode>
 );
