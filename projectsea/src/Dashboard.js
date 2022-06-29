@@ -21,8 +21,6 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 // import Chart from './Chart';
 // import Deposits from './Deposits';
 // import Orders from './Orders';
-import Stopwatchpage from './Stopwatchpage';
-
 function Copyright(props) {
   return (
     <Typography variant="body2" color="text.secondary" align="center" {...props}>
@@ -173,7 +171,7 @@ function DashboardContent() {
                     height: 240,
                   }}
                 >
-                  <Stopwatchpage/>
+                  {/* <Stopwatchpage/> */}
                 </Paper>
               </Grid>
               {/* Recent Deposits */}
