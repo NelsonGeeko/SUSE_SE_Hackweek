@@ -1,22 +1,13 @@
-var mysql = require("mysql");
+var mysql = require('mysql');
 
 var con = mysql.createConnection({
-  host: "http://ec2-18-202-26-166.eu-west-1.compute.amazonaws.com/phpmyadmin",
-  port:"3306",
-//   path:"/phpmyadmin",
+  host: "http://ec2-18-202-26-166.eu-west-1.compute.amazonaws.com/phpmyadmin/",
   user: "leaderboard",
-  password: "leaderboard",
-//   database: "leads"
+  password: "leaderboard"
 });
 
 con.connect(function(err) {
-    if (err) throw err;
-    console.log("Connected!");
-  });
+  if (err) throw err;
+  console.log("Connected!");
+});
 
-// connection.query(
-//   "SELECT  FROM leads",
-//   (err, result) => {
-//     err ? console.log(err) : console.log(result[0].hexcode);
-//   }
-// );
