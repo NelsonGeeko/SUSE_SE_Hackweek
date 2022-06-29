@@ -11,7 +11,7 @@ var con = mysql.createConnection({
 
 con.connect(function(err) {
   if (err) throw err;
-  con.query("SELECT * FROM leads", function (err, result, fields) {
+  con.query("SELECT LeadID,FirstName, LastName,score FROM Score INNER JOIN leads WHERE leads.LeadID=Score.LeadID", function (err, result, fields) {
     if (err) throw err;
     console.log(result);
   });
