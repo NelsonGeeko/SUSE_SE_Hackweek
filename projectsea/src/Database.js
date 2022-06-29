@@ -5,11 +5,15 @@ var con = mysql.createConnection({
   port:"3306",
   path:"/phpmyadmin",
   user: "leaderboard",
-  password: "leaderboard"
+  password: "leaderboard",
+  database:"leads"
 });
 
 con.connect(function(err) {
   if (err) throw err;
-  console.log("Connected!");
+  con.query("SELECT * FROM leads", function (err, result, fields) {
+    if (err) throw err;
+    console.log(result);
+  });
 });
 
